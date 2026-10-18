@@ -446,83 +446,6 @@ img {
 }
 
 /* ==========================================================================
-   Leadership & Messages Section
-   ========================================================================== */
-.leadership-bg {
-  background-color: #f1f5f9;
-  border-top: 1px solid var(--color-border);
-}
-
-.messages-grid {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 28px;
-}
-
-.message-card {
-  background: var(--color-white);
-  border: 1px solid var(--color-border);
-  border-radius: var(--radius-lg);
-  padding: 30px;
-  box-shadow: var(--shadow-sm);
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  position: relative;
-  transition: transform 0.2s ease, box-shadow 0.2s ease;
-}
-
-.message-card:hover {
-  transform: translateY(-3px);
-  box-shadow: var(--shadow-md);
-}
-
-.quote-icon {
-  font-size: 42px;
-  line-height: 1;
-  color: #cbd5e1;
-  font-family: Georgia, serif;
-  margin-bottom: 8px;
-}
-
-.message-card blockquote {
-  font-size: 14px;
-  line-height: 1.7;
-  color: #334155;
-  font-style: italic;
-  margin-bottom: 24px;
-}
-
-.leader-profile {
-  display: flex;
-  align-items: center;
-  gap: 14px;
-  padding-top: 16px;
-  border-top: 1px solid #f1f5f9;
-}
-
-.leader-avatar {
-  width: 52px;
-  height: 52px;
-  border-radius: 50%;
-  object-fit: cover;
-  border: 2px solid var(--color-border);
-  background-color: #e2e8f0;
-}
-
-.leader-info h4 {
-  font-size: 16px;
-  font-weight: 800;
-  color: var(--color-primary-dark);
-}
-
-.leader-info span {
-  font-size: 12px;
-  font-weight: 600;
-  color: #d97706;
-}
-
-/* ==========================================================================
    Academics & Facilities Cards
    ========================================================================== */
 .bg-light-stripe {
@@ -636,6 +559,86 @@ img {
   font-size: 12px;
   font-weight: 600;
   padding: 10px 12px;
+}
+
+/* ==========================================================================
+   Leadership & Messages Section
+   ========================================================================== */
+.leadership-bg {
+  background-color: #ffffff;
+  border-top: 1px solid var(--color-border);
+}
+
+.messages-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 28px;
+}
+
+.message-card {
+  background: var(--color-slate-bg);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-lg);
+  padding: 30px;
+  box-shadow: var(--shadow-sm);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  position: relative;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.message-card:hover {
+  transform: translateY(-3px);
+  box-shadow: var(--shadow-md);
+}
+
+.quote-icon {
+  font-size: 42px;
+  line-height: 1;
+  color: #cbd5e1;
+  font-family: Georgia, serif;
+  margin-bottom: 8px;
+}
+
+.message-card blockquote {
+  font-size: 14px;
+  line-height: 1.7;
+  color: #334155;
+  font-style: italic;
+  margin-bottom: 24px;
+}
+
+.leader-profile {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  padding-top: 16px;
+  border-top: 1px solid var(--color-border);
+}
+
+/* Square Photo Frame for Leadership */
+.leader-avatar {
+  width: 64px;
+  height: 64px;
+  border-radius: var(--radius-sm);
+  object-fit: cover;
+  border: 2px solid var(--color-border);
+  background-color: #e2e8f0;
+  box-shadow: var(--shadow-sm);
+  flex-shrink: 0;
+}
+
+.leader-info h4 {
+  font-size: 16px;
+  font-weight: 800;
+  color: var(--color-primary-dark);
+}
+
+.leader-info span {
+  font-size: 12px;
+  font-weight: 600;
+  color: #d97706;
 }
 
 /* ==========================================================================
