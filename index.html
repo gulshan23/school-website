@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Teklal Mahto Residential School</title>
-  <!-- Handcrafted CSS Stylesheet -->
+  <!-- Handcrafted CSS Stylesheet (Zero external dependencies) -->
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -30,7 +30,7 @@
       
       <!-- School Logo & Details -->
       <a href="#" class="brand-wrapper">
-        <img src="logo.jpeg" alt="Teklal Mahto Residential School Logo" class="brand-logo">
+        <img src="logo.jpg" alt="Teklal Mahto Residential School Logo" class="brand-logo">
         <div class="brand-details">
           <h1>Teklal Mahto Residential School</h1>
           <p class="address-line">Nawadih, Ramgarh, Jharkhand - 829134</p>
@@ -210,7 +210,7 @@
     <div class="site-container">
       <div class="contact-grid">
         
-        <!-- Left: Campus Info & Feedback Form -->
+        <!-- Left: Campus Info, Google Map & Feedback Form -->
         <div class="contact-info-block">
           <h3>Contact School Administration</h3>
           <p>Parents and guardians are welcome to visit our campus during office hours (8:00 AM – 3:00 PM).</p>
@@ -218,15 +218,34 @@
           <div class="contact-items-list">
             <div class="contact-item-row">
               <svg class="icon" viewBox="0 0 24 24"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path><circle cx="12" cy="10" r="3"></circle></svg>
-              <span>Nawadih, Ramgarh, Jharkhand - 829134</span>
+              <a href="https://maps.app.goo.gl/CDFVXh9MstSokraR7" target="_blank" rel="noopener noreferrer">
+                <span>Nawadih, Ramgarh, Jharkhand - 829134 (Click to open map)</span>
+              </a>
             </div>
             <div class="contact-item-row">
               <svg class="icon" viewBox="0 0 24 24"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path></svg>
-              <span>+91 7903592714</span>
+              <a href="tel:+917903592714"><span>+91 7903592714</span></a>
             </div>
             <div class="contact-item-row">
               <svg class="icon" viewBox="0 0 24 24"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg>
-              <span>tmrsnawadih@gmail.com</span>
+              <a href="mailto:tmrsnawadih@gmail.com"><span>tmrsnawadih@gmail.com</span></a>
+            </div>
+          </div>
+
+          <!-- Embedded School Location Map -->
+          <div class="map-container">
+            <iframe 
+              title="Teklal Mahto Residential School Location Map"
+              src="https://maps.google.com/maps?q=Teklal%20Mahto%20Residential%20School,%20Nawadih,%20Ramgarh,%20Jharkhand%20829134&t=&z=14&ie=UTF8&iwloc=&output=embed" 
+              loading="lazy" 
+              referrerpolicy="no-referrer-when-downgrade">
+            </iframe>
+            <div class="map-action-bar">
+              <span style="color: #cbd5e1;">Campus Location</span>
+              <a href="https://maps.app.goo.gl/CDFVXh9MstSokraR7" target="_blank" rel="noopener noreferrer">
+                <svg class="icon" viewBox="0 0 24 24"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path><polyline points="15 3 21 3 21 9"></polyline><line x1="10" y1="14" x2="21" y2="3"></line></svg>
+                Get Directions (Google Maps)
+              </a>
             </div>
           </div>
 
