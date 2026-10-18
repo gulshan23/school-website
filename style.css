@@ -446,7 +446,7 @@ img {
 }
 
 /* ==========================================================================
-   Academics & Facilities Cards
+   Academics Cards
    ========================================================================== */
 .bg-light-stripe {
   background-color: var(--color-white);
@@ -481,6 +481,28 @@ img {
   margin-bottom: 14px;
 }
 
+.info-card h4, .facility-card-item h4 {
+  font-size: 17px;
+  font-weight: 700;
+  color: var(--color-primary-dark);
+  margin-bottom: 8px;
+}
+
+.info-card p, .facility-card-item p {
+  font-size: 13px;
+  color: #475569;
+  line-height: 1.5;
+}
+
+/* ==========================================================================
+   Facilities Grid (4 Columns: Hostel, Mess, Sports, Transport)
+   ========================================================================== */
+.facilities-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+}
+
 .facility-card-item {
   background: var(--color-white);
   padding: 24px;
@@ -502,19 +524,7 @@ img {
 .icon-blue { background: #dbeafe; color: #1e3a8a; }
 .icon-green { background: #d1fae5; color: #065f46; }
 .icon-amber { background: #fef3c7; color: #92400e; }
-
-.info-card h4, .facility-card-item h4 {
-  font-size: 17px;
-  font-weight: 700;
-  color: var(--color-primary-dark);
-  margin-bottom: 8px;
-}
-
-.info-card p, .facility-card-item p {
-  font-size: 13px;
-  color: #475569;
-  line-height: 1.5;
-}
+.icon-purple { background: #ede9fe; color: #6d28d9; }
 
 /* ==========================================================================
    Photo Gallery Grid
@@ -948,6 +958,12 @@ footer {
 /* ==========================================================================
    Responsive Viewports (Mobile & Tablet)
    ========================================================================== */
+@media (max-width: 992px) {
+  .facilities-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
 @media (max-width: 900px) {
   .hero-grid,
   .about-grid,
@@ -998,6 +1014,10 @@ footer {
 
   .site-container {
     padding: 40px 16px;
+  }
+
+  .facilities-grid {
+    grid-template-columns: 1fr;
   }
 
   .form-two-col {
