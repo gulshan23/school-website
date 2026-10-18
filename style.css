@@ -1124,3 +1124,76 @@ footer {
     justify-content: center;
   }
 }
+/* ==========================================================================
+   Events & Media Gallery Page Styling
+   ========================================================================== */
+.page-header {
+  background: linear-gradient(to right, #172554, #1e3a8a);
+  color: var(--color-white);
+  padding: 48px 20px;
+  text-align: center;
+}
+
+.page-header h2 {
+  font-size: 32px;
+  font-weight: 800;
+  margin-bottom: 8px;
+}
+
+.page-header p {
+  color: #cbd5e1;
+  font-size: 14px;
+}
+
+.video-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 24px;
+  margin-top: 24px;
+}
+
+.video-card {
+  background: var(--color-white);
+  border-radius: var(--radius-md);
+  overflow: hidden;
+  border: 1px solid var(--color-border);
+  box-shadow: var(--shadow-sm);
+}
+
+.video-wrapper {
+  position: relative;
+  padding-bottom: 56.25%; /* 16:9 Aspect Ratio */
+  height: 0;
+  overflow: hidden;
+}
+
+.video-wrapper iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border: 0;
+}
+
+.video-info {
+  padding: 16px;
+}
+
+.video-info h4 {
+  font-size: 15px;
+  font-weight: 700;
+  color: var(--color-primary-dark);
+  margin-bottom: 4px;
+}
+
+.video-info p {
+  font-size: 12px;
+  color: var(--color-text-muted);
+}
+
+@media (max-width: 768px) {
+  .video-grid {
+    grid-template-columns: 1fr;
+  }
+}
