@@ -3,71 +3,164 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Events & Media Gallery - Teklal Mahto Residential School</title>
+  <title>Photo & Video Gallery - Teklal Mahto Residential School</title>
+  
+  <!-- Browser Tab Favicon -->
   <link rel="icon" type="image/jpeg" href="logo.jpeg">
+  
+  <!-- Handcrafted CSS Stylesheet -->
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-  <!-- Top Announcement Bar -->
+  <!-- Top Announcement Bar (Same as index.html) -->
   <div class="top-bar">
     <div class="top-bar-contact">
-      <a href="tel:+917903592714">+91 7903592714</a>
-      <span style="color: #cbd5e1;">tmrsnawadih@gmail.com</span>
+      <a href="tel:+917903592714">
+        <svg class="icon" viewBox="0 0 24 24"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path></svg>
+        +91 7903592714
+      </a>
+      <span style="display: inline-flex; align-items: center; gap: 6px; color: #cbd5e1;">
+        <svg class="icon" viewBox="0 0 24 24"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg>
+        tmrsnawadih@gmail.com
+      </span>
     </div>
-    <div class="top-bar-notice">School Media & Events Hub</div>
+    <div class="top-bar-notice">Admissions Open 2026-27</div>
   </div>
 
-  <!-- Navbar -->
+  <!-- Navigation Bar (Same as index.html) -->
   <nav class="navbar">
     <div class="nav-container">
+      
+      <!-- School Logo & Details -->
       <a href="index.html" class="brand-wrapper">
-        <img src="logo.jpeg" alt="Logo" class="brand-logo">
+        <img src="logo.jpeg" alt="Teklal Mahto Residential School Logo" class="brand-logo">
         <div class="brand-details">
           <h1>Teklal Mahto Residential School</h1>
-          <p class="address-line">Nawadih, Ramgarh, Jharkhand</p>
+          <p class="address-line">Nawadih, Ramgarh, Jharkhand - 829134</p>
+          <p class="affiliation-line">To be affiliated by CBSE • Excellence in Education</p>
         </div>
       </a>
+
+      <!-- Desktop Links -->
       <div class="desktop-menu">
         <a href="index.html">Home</a>
         <a href="index.html#about">About Us</a>
         <a href="index.html#academics">Academics</a>
-        <a href="gallery.html" style="color: var(--color-gold); font-weight: 700;">Media & Events</a>
-        <a href="index.html#contact" class="nav-link-enquiry">Enquiry</a>
+        <a href="index.html#facilities">Hostel & Facilities</a>
+        <a href="gallery.html" style="color: var(--color-gold); font-weight: 700;">Gallery</a>
+        <a href="index.html#leadership">Messages</a>
+        <a href="index.html#contact" class="nav-link-enquiry">Quick Enquiry</a>
+        <a href="index.html#feedback-box" class="nav-link-feedback">Grievance / Feedback</a>
       </div>
+
+      <!-- Mobile Hamburger Button -->
+      <button id="menu-btn" class="mobile-toggle" aria-label="Toggle navigation">
+        <svg class="icon" style="width: 26px; height: 26px;" viewBox="0 0 24 24"><line x1="3" y1="12" x2="21" y2="12"></line><line x1="3" y1="6" x2="21" y2="6"></line><line x1="3" y1="18" x2="21" y2="18"></line></svg>
+      </button>
+
+    </div>
+
+    <!-- Mobile Dropdown Menu -->
+    <div id="mobile-menu" class="mobile-nav-menu">
+      <a href="index.html" class="m-link">Home</a>
+      <a href="index.html#about" class="m-link">About Us</a>
+      <a href="index.html#academics" class="m-link">Academics</a>
+      <a href="index.html#facilities" class="m-link">Hostel & Facilities</a>
+      <a href="gallery.html" class="m-link" style="color: var(--color-gold); font-weight: 700;">Gallery</a>
+      <a href="index.html#leadership" class="m-link">Messages</a>
+      <a href="index.html#contact" class="m-link" style="color: var(--color-gold-hover);">Quick Enquiry</a>
+      <a href="index.html#feedback-box" class="m-link" style="color: var(--color-primary-dark);">Grievance / Feedback</a>
+      <a href="tel:+917903592714" class="btn-mobile-call">
+        <svg class="icon" style="color: var(--color-gold);" viewBox="0 0 24 24"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path></svg>
+        Call School Office
+      </a>
     </div>
   </nav>
 
-  <!-- Page Banner -->
+  <!-- Page Header Banner -->
   <div class="page-header">
-    <h2>Campus Events & Video Highlights</h2>
-    <p>Watch our annual functions, sports tournaments, and student life in action.</p>
+    <h2>Campus Photo & Video Gallery</h2>
+    <p>Explore life, activities, celebrations, and achievements at Teklal Mahto Residential School.</p>
   </div>
 
-  <!-- Main Media Content -->
   <main class="site-container">
-    
-    <!-- Video Highlights Section (Powered by YouTube) -->
-    <div class="section-title" style="text-align: left;">
-      <span class="eyebrow-text">Video Gallery</span>
-      <h3>Campus Activities on Video</h3>
-      <p>Stream high-definition highlights directly from our official school channel.</p>
+
+    <!-- ======================================================================
+         SECTION 1: PHOTO GALLERY (Photos lagane ke liye option)
+         ====================================================================== -->
+    <div class="section-title" style="text-align: left; margin-bottom: 24px;">
+      <span class="eyebrow-text">Photo Album</span>
+      <h3>Campus & Student Life Moments</h3>
+      <p>Photos of our classrooms, labs, sports, celebrations, and campus life.</p>
     </div>
 
-    <div class="video-grid">
-      <!-- Video Card 1 -->
+    <div class="gallery-grid" style="margin-bottom: 50px;">
+      <!-- Photo Item 1 -->
+      <div class="gallery-box">
+        <img src="gallery1.jpg" alt="Smart Classrooms">
+        <div class="gallery-label">Smart Classrooms</div>
+      </div>
+      <!-- Photo Item 2 -->
+      <div class="gallery-box">
+        <img src="gallery2.jpg" alt="Library & Reading">
+        <div class="gallery-label">Library & Study Hall</div>
+      </div>
+      <!-- Photo Item 3 -->
+      <div class="gallery-box">
+        <img src="gallery3.jpg" alt="Sports Ground">
+        <div class="gallery-label">Sports Ground & Drills</div>
+      </div>
+      <!-- Photo Item 4 -->
+      <div class="gallery-box">
+        <img src="gallery4.jpg" alt="Computer Lab">
+        <div class="gallery-label">Computer & Science Lab</div>
+      </div>
+      <!-- Photo Item 5 (Banner campus view) -->
+      <div class="gallery-box">
+        <img src="banner.jpg" alt="School Campus">
+        <div class="gallery-label">Campus Front View</div>
+      </div>
+      <!-- Photo Item 6 (About view) -->
+      <div class="gallery-box">
+        <img src="about.jpg" alt="Assembly & Activities">
+        <div class="gallery-label">Daily Morning Assembly</div>
+      </div>
+      <!-- Photo Item 7 (Future Photo Placeholder) -->
+      <div class="gallery-box">
+        <img src="gallery1.jpg" alt="Cultural Events">
+        <div class="gallery-label">Cultural Functions</div>
+      </div>
+      <!-- Photo Item 8 (Future Photo Placeholder) -->
+      <div class="gallery-box">
+        <img src="gallery3.jpg" alt="Hostel & Dining">
+        <div class="gallery-label">Hostel & Dining Hall</div>
+      </div>
+    </div>
+
+
+    <!-- ======================================================================
+         SECTION 2: VIDEO HIGHLIGHTS (Videos lagane ke liye option)
+         ====================================================================== -->
+    <div class="section-title" style="text-align: left; margin-bottom: 24px;">
+      <span class="eyebrow-text">Video Highlights</span>
+      <h3>Campus Activities on Video</h3>
+      <p>Watch function performances, sports meets, and student speeches.</p>
+    </div>
+
+    <div class="video-grid" style="margin-bottom: 50px;">
+      <!-- Video 1 -->
       <div class="video-card">
         <div class="video-wrapper">
-          <!-- Replace VIDEO_ID with your YouTube video ID -->
           <iframe src="https://www.youtube.com/embed?listType=user_uploads&list=UCYi3R9cxFpmF4qnzqesrbog" title="Campus Tour & Activities" allowfullscreen></iframe>
         </div>
         <div class="video-info">
           <h4>Annual Sports Meet & Drill</h4>
-          <p>Annual athletic events, march past, and cultural performances by residential students.</p>
+          <p>Annual athletic events, march past, and physical drill demonstrations by students.</p>
         </div>
       </div>
 
-      <!-- Video Card 2 -->
+      <!-- Video 2 -->
       <div class="video-card">
         <div class="video-wrapper">
           <iframe src="https://www.youtube.com/embed?listType=user_uploads&list=UCYi3R9cxFpmF4qnzqesrbog" title="School Functions" allowfullscreen></iframe>
@@ -79,25 +172,80 @@
       </div>
     </div>
 
-    <!-- Official YouTube Banner Callout -->
-    <div style="margin-top: 40px; background: #fef2f2; border: 1px solid #fecaca; border-radius: var(--radius-md); padding: 24px; text-align: center;">
-      <h4 style="color: #991b1b; font-size: 18px; margin-bottom: 6px;">Want to see more videos?</h4>
-      <p style="color: #7f1d1d; font-size: 13px; margin-bottom: 16px;">Subscribe to our official school YouTube channel for all regular class activities, functions, and updates.</p>
-      <a href="https://www.youtube.com/channel/UCYi3R9cxFpmF4qnzqesrbog" target="_blank" rel="noopener noreferrer" class="social-btn btn-youtube" style="display: inline-flex;">
-        <svg viewBox="0 0 24 24" style="width: 18px; height: 18px; fill: #fff;"><path d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"/></svg>
-        <span>Visit Official YouTube Channel</span>
-      </a>
+
+    <!-- ======================================================================
+         SECTION 3: SOCIAL MEDIA CARDS (Facebook, Instagram & YouTube)
+         ====================================================================== -->
+    <div style="background: var(--color-white); border: 1px solid var(--color-border); border-radius: var(--radius-lg); padding: 32px 24px; text-align: center; box-shadow: var(--shadow-sm);">
+      <span class="eyebrow-text">Stay Updated</span>
+      <h3 style="font-size: 22px; font-weight: 800; color: var(--color-primary-dark); margin: 6px 0 8px;">Connect With Us on Social Media</h3>
+      <p style="color: var(--color-text-muted); font-size: 13px; max-width: 600px; margin: 0 auto 24px;">Follow our official pages on Facebook, Instagram, and YouTube to get daily updates, event photos, announcements, and exam schedules.</p>
+      
+      <div style="display: flex; gap: 14px; justify-content: center; align-items: center; flex-wrap: wrap;">
+        <!-- Facebook Button -->
+        <a href="https://www.facebook.com/tmrs.nawadih" target="_blank" rel="noopener noreferrer" class="social-btn btn-facebook" style="font-size: 13px; padding: 10px 20px;">
+          <svg viewBox="0 0 24 24"><path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/></svg>
+          <span>Follow on Facebook</span>
+        </a>
+
+        <!-- Instagram Button -->
+        <a href="https://www.instagram.com/tmrs.nawadih" target="_blank" rel="noopener noreferrer" class="social-btn btn-instagram" style="font-size: 13px; padding: 10px 20px;">
+          <svg viewBox="0 0 24 24"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/></svg>
+          <span>Follow on Instagram</span>
+        </a>
+
+        <!-- YouTube Button -->
+        <a href="https://www.youtube.com/channel/UCYi3R9cxFpmF4qnzqesrbog" target="_blank" rel="noopener noreferrer" class="social-btn btn-youtube" style="font-size: 13px; padding: 10px 20px;">
+          <svg viewBox="0 0 24 24"><path d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"/></svg>
+          <span>Subscribe on YouTube</span>
+        </a>
+      </div>
     </div>
 
   </main>
 
-  <!-- Footer -->
+  <!-- Footer (Same as index.html) -->
   <footer>
     <div class="footer-content">
       <p>© 2026 Teklal Mahto Residential School. All Rights Reserved.</p>
-      <a href="index.html" style="color: #fde68a;">← Back to Home</a>
+      
+      <!-- Footer Social Icons -->
+      <div class="footer-social-icons">
+        <a href="https://www.facebook.com/tmrs.nawadih" target="_blank" rel="noopener noreferrer" class="footer-social-link" title="Facebook" aria-label="Facebook">
+          <svg viewBox="0 0 24 24"><path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/></svg>
+        </a>
+        <a href="https://www.instagram.com/tmrs.nawadih" target="_blank" rel="noopener noreferrer" class="footer-social-link" title="Instagram" aria-label="Instagram">
+          <svg viewBox="0 0 24 24"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/></svg>
+        </a>
+        <a href="https://www.youtube.com/channel/UCYi3R9cxFpmF4qnzqesrbog" target="_blank" rel="noopener noreferrer" class="footer-social-link" title="YouTube" aria-label="YouTube">
+          <svg viewBox="0 0 24 24"><path d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"/></svg>
+        </a>
+      </div>
     </div>
   </footer>
 
+  <!-- Floating WhatsApp Helpline Button -->
+  <a href="https://wa.me/917903592714?text=Namaste,%20I%20want%20information%20regarding%20admission%20at%20Teklal%20Mahto%20Residential%20School." class="whatsapp-float" target="_blank" rel="noopener noreferrer" aria-label="Chat on WhatsApp">
+    <svg viewBox="0 0 24 24"><path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.414-.003 6.557-5.338 11.892-11.893 11.892-1.99-.001-3.951-.5-5.688-1.448l-6.305 1.654zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884-.001 2.225.651 3.891 1.746 5.634l-.999 3.648 3.742-.981zm11.387-5.464c-.074-.124-.272-.198-.57-.347-.297-.149-1.758-.868-2.031-.967-.272-.099-.47-.149-.669.149-.198.297-.768.967-.941 1.165-.173.198-.347.223-.644.074-.297-.149-1.255-.462-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.297-.347.446-.521.151-.172.2-.296.3-.495.099-.198.05-.372-.025-.521-.075-.148-.669-1.611-.916-2.206-.242-.579-.487-.501-.669-.51l-.57-.01c-.198 0-.52.074-.792.372s-1.04 1.016-1.04 2.479 1.065 2.876 1.213 3.074c.149.198 2.095 3.2 5.076 4.487.709.306 1.263.489 1.694.626.712.226 1.36.194 1.872.118.571-.085 1.758-.719 2.006-1.413.248-.695.248-1.29.173-1.414z"/></svg>
+  </a>
+
+  <!-- Mobile Menu Toggle Script (Same as index.html) -->
+  <script>
+    const menuBtn = document.getElementById('menu-btn');
+    const mobileMenu = document.getElementById('mobile-menu');
+    const mobileLinks = document.querySelectorAll('.m-link');
+
+    if (menuBtn && mobileMenu) {
+      menuBtn.addEventListener('click', () => {
+        mobileMenu.classList.toggle('active');
+      });
+
+      mobileLinks.forEach(link => {
+        link.addEventListener('click', () => {
+          mobileMenu.classList.remove('active');
+        });
+      });
+    }
+  </script>
 </body>
 </html>
