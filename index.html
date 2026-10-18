@@ -4,6 +4,10 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Teklal Mahto Residential School</title>
+  
+  <!-- Browser Tab Favicon -->
+  <link rel="icon" type="image/jpeg" href="logo.jpeg">
+  
   <!-- Handcrafted CSS Stylesheet (Zero external dependencies) -->
   <link rel="stylesheet" href="style.css">
 </head>
@@ -148,13 +152,13 @@
     </div>
   </section>
 
-  <!-- Facilities Section -->
+  <!-- Campus & Hostel Facilities Section (Now includes Transport) -->
   <section id="facilities" class="site-container">
     <div class="section-title">
-      <h3>Campus & Hostel Life</h3>
-      <p>Comprehensive boarding facilities ensuring safety, nutrition, and discipline.</p>
+      <h3>Campus, Hostel & Facilities</h3>
+      <p>Comprehensive infrastructure ensuring safety, nutrition, physical growth, and hassle-free transport.</p>
     </div>
-    <div class="three-column-grid">
+    <div class="facilities-grid">
       <div class="facility-card-item">
         <div class="facility-icon-circle icon-blue">
           <svg class="icon" viewBox="0 0 24 24"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"></path><polyline points="9 22 9 12 15 12 15 22"></polyline></svg>
@@ -173,8 +177,16 @@
         <div class="facility-icon-circle icon-amber">
           <svg class="icon" viewBox="0 0 24 24"><circle cx="12" cy="8" r="7"></circle><polyline points="8.21 13.89 7 23 12 20 17 23 15.79 13.88"></polyline></svg>
         </div>
-        <h4>Sports & Physical Fitness</h4>
-        <p>Daily morning drill, playground, cricket, football, yoga, and athletic coaching under physical instructors.</p>
+        <h4>Sports & Fitness</h4>
+        <p>Daily morning drill, sports ground, cricket, football, yoga, and athletic coaching under physical instructors.</p>
+      </div>
+      <!-- Transport Facility Card -->
+      <div class="facility-card-item">
+        <div class="facility-icon-circle icon-purple">
+          <svg class="icon" viewBox="0 0 24 24"><path d="M19 17h2l.64-2.54A6 6 0 0 0 22 13V6a2 2 0 0 0-2-2H4a2 2 0 0 0-2 2v7c0 .53.07 1.05.2 1.54L3 17h2m0 0v2a1 1 0 0 0 1 1h2a1 1 0 0 0 1-1v-2m10 0v2a1 1 0 0 0 1 1h2a1 1 0 0 0 1-1v-2m-14 0h14M6 9h12M7 13h.01M17 13h.01"></path></svg>
+        </div>
+        <h4>Safe School Transport</h4>
+        <p>Dedicated bus and van pickup/drop facility covering Nawadih, Ramgarh, and surrounding rural routes for day scholars.</p>
       </div>
     </div>
   </section>
@@ -361,6 +373,7 @@
                 <select name="type" required>
                   <option value="Hostel (Boarder)">Hostel Boarder</option>
                   <option value="Day Scholar">Day Scholar</option>
+                  <option value="Day Scholar (Transport Required)">Day Scholar (Transport Required)</option>
                 </select>
               </div>
             </div>
