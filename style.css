@@ -708,6 +708,66 @@ img {
   margin-top: 2px;
 }
 
+/* Social Media Channels */
+.social-channels-bar {
+  margin: 18px 0 24px;
+  padding: 14px 16px;
+  background: rgba(30, 58, 138, 0.4);
+  border: 1px solid #1e40af;
+  border-radius: var(--radius-md);
+}
+
+.social-title {
+  font-size: 12px;
+  font-weight: 700;
+  color: #fde68a;
+  text-transform: uppercase;
+  margin-bottom: 10px;
+  letter-spacing: 0.5px;
+}
+
+.social-links {
+  display: flex;
+  gap: 12px;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.social-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 8px 14px;
+  border-radius: var(--radius-sm);
+  font-size: 12px;
+  font-weight: 600;
+  color: #ffffff !important;
+  transition: transform 0.2s ease, opacity 0.2s ease;
+}
+
+.social-btn:hover {
+  transform: translateY(-2px);
+  opacity: 0.95;
+}
+
+.social-btn svg {
+  width: 16px;
+  height: 16px;
+  fill: currentColor;
+}
+
+.btn-facebook {
+  background-color: #1877f2;
+}
+
+.btn-instagram {
+  background: linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%);
+}
+
+.btn-youtube {
+  background-color: #ff0000;
+}
+
 /* Google Map Embed & Direction Link */
 .map-container {
   margin-bottom: 24px;
@@ -918,10 +978,44 @@ img {
 footer {
   background-color: #0f172a;
   color: #94a3b8;
-  text-align: center;
-  padding: 24px 20px;
+  padding: 30px 20px;
   font-size: 12px;
   border-top: 1px solid #1e293b;
+}
+
+.footer-content {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 16px;
+}
+
+.footer-social-icons {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+}
+
+.footer-social-link {
+  color: #94a3b8;
+  transition: color 0.2s ease, transform 0.2s ease;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.footer-social-link:hover {
+  color: var(--color-gold);
+  transform: translateY(-2px);
+}
+
+.footer-social-link svg {
+  width: 20px;
+  height: 20px;
+  fill: currentColor;
 }
 
 /* ==========================================================================
@@ -1022,5 +1116,11 @@ footer {
 
   .form-two-col {
     grid-template-columns: 1fr;
+  }
+
+  .footer-content {
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
   }
 }
